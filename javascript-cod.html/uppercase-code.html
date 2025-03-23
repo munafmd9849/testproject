@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <dl>
+        <dt>name</dt>
+        <dd>
+            <input type="text" onkeyup="uppercase()" id="textName">
+        </dd>
+    </dl>
+    <script type="text/javascript">
+        function uppercase(){
+            let Name=document.getElementById("textName");
+            let data =Name.value.toUpperCase();
+            Name.value=data;
+        }
+    </script>
+</body>
+</html>

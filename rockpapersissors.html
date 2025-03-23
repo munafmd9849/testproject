@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        body {
+            background-color:rgb(255, 255, 0);
+        }
+
+        header {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: red;
+
+        }
+        .ui{
+            display: flex;
+            flex-direction:row ;
+            justify-content: space-evenly;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 15px;
+
+        }
+        .rounds{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+
+        .img{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+        .user{
+            padding: 30px;
+            border: 2px solid white;
+            height: 370px;
+            width: 400px;
+            
+        }
+        .AI{
+            padding: 30px;
+            border: 2px solid white;
+            height: 375px;
+            width: 400px;
+        }
+        .ui figcaption{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .img button{
+            background-color: rgba(255, 0, 0,0.9);
+            border-radius: 30px;
+        }
+        img{
+           background-color: rgb(75, 66, 66);
+           border-radius: 50px;
+        }
+
+    </style>
+
+    <title>ROCK PAPER SISSORS</title>
+</head>
+
+<body>
+    <header>
+        user vs ai-round </header>
+    <div class="rounds">
+        <span>Total User Wins</span>
+        <span> Total Draws</span>
+        <span> Total AI Wins</span>
+    </div>
+    <div class="ui">
+        <figure class="user">
+            <img src="public/images/rock.png" height="300px" width="300px">
+            <figcaption>choose your move</figcaption>
+            <div class="img">
+                <button> <img src="public/images/rock.png" height="30px" width="30px"></button>
+                <button><img src="public/images/paper.1.png" height="30px" width="30px"></button>
+                <button><img src="public/images/sissors.png" height="30px" width="30px"></button>
+            </div>
+
+        </figure>
+        <figure class="AI">
+            <img src="public/images/rock_2.png" height="300px" width="300px">
+            <figcaption>ai move</figcaption>
+
+        </figure>
+    </div>
+
+</body>
+
+</html>

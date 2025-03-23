@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        input:required + span{
+           color:red;
+        }
+        input:required ~ div{
+            color:red;
+        }
+
+        input:valid + span{
+            display: none;
+        }
+        input:valid ~ div{
+            display: none;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <form action="" class="w-25 ms-4">
+        <div class="mt-3 ">
+            <div class="fw-bold">username</div>
+            <div>
+                <input type="text" class="" required>
+                <span>*</span>
+                <div>Username is requied </div>
+            </div>
+        </div>
+
+        <div class="mt-3 ">
+            <div class="fw-bold" >Password</div>
+            <div><input type="text" required><span>*</span></div>
+            <div>Password is requied </div>
+        </div>
+        <div>
+            <div class="fw-bold">Age</div>
+            <div><input type="text" ></div>
+            <div>Age is requied </div>
+        </div>
+        <div>
+            <div class="fw-bold">Mobile</div>
+            <div><input type="text" pattern="+91 {6,9}\d{9}" required placeholder="+91"><span>*</span></div>
+            <div>+91 -10  digits required </div>
+        </div>
+        <div>
+            <button>
+                submit
+            </button>
+        </div>
+    </form>
+</body>
+</html>

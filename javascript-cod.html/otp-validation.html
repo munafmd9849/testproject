@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sucess{
+            color: green;
+            font-family: brush script mt;
+            font-size: larger;
+        }
+        .fail{
+            color: red;
+            font-family: brush script mt;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt></dt>
+        <dd>
+            <input type="text" id="txtotp" onblur="validation()">
+        </dd>
+        <p id="info">
+
+        </p>
+    </dl>
+    <script type="text/javascript">
+        function validation(){
+            //target elements
+            let otp=document.getElementById("txtotp");
+            let info =document.getElementById("info");
+
+
+            otpResult=otp.value;
+
+            //dovalidation
+            
+            if(otpResult==="3456"){
+                info.textContent="valid";
+                info.className="sucess";
+            }
+            else{
+                info.textContent="invalid";
+                info.className="fail";
+            }
+        }
+
+    </script>
+</body>
+</html>

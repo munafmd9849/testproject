@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div>
+
+        <div class="h3 m-3">
+            EMI Calculator
+        </div>
+        <div class="row mt-3 ms-1">
+
+            <div class="col">
+                Amount you need <input type="text" name="txtAmount" id="presentamount">
+            </div>
+            <div class="col">
+                <label for="">for</label>
+                <input type="text"  name="txtDuration" id="presentyear">years
+            </div>
+            <div class="col">
+                <label for="">intrest rate</label>
+                <input type="text"  name="txtrate" id="presentrate">
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <input type="range" id="txtAmount"  min="50000" max="1000000" onchange="changeamount()" class="form-range ">
+                </div>
+                <div class="col">
+                    <input type="range" id="txtDuration" size="2" min="1" max="5" onchange="changeyear()" class="form-range">
+                </div>
+                <div class="col">
+                    <input type="range" id="txtrate"  size="3" min="10.25" max="18.45" onchange="changerate()" class="form-range">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+
+            <div class="col" >
+                
+            </div>
+            <div class="col" >
+                
+            </div>
+            <div class="col" >
+                
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button class="btn btn-primary float-end" type="button" onclick="calculate()">CALCULATE</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        function changeamount(){
+            txtAmount=document.getElementById("txtAmount");
+            presentamount=document.getElementById("presentamount");
+            amount =Number (txtAmount.value);
+            presentamount.value=amount;
+            
+        }
+        function changeyear(){
+            years=document.getElementById("txtDuration");
+            presentyear=document.getElementById("presentyear");
+            year =Number(years.value);
+            presentyear.value=year;
+        }
+        function changerate(){
+            present=document.getElementById("presentrate");
+            txtrate=document.getElementById("txtrate");
+            rate = Number(txtrate.value);
+            presentrate.value=rate;
+        }
+        function calculate(){
+            nr=Math.pow(1+rate,years);
+            console.log(nr);
+            amount*rate
+            
+        }
+        
+
+        
+
+    </script>
+        
+</body>
+</html>

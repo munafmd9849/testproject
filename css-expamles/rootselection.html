@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .dark{
+            background-color: rgba(80,200,120,1);
+            color:rgb(255, 215, 0);
+
+        }
+    </style>
+</head>
+<body>
+    <button>on</button>
+    <div>
+        lorem50000
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    document.querySelector("button")
+     .addEventListener("click",function(){
+        let classattribute = document.documentElement.classList;
+
+        classattribute.contains("dark")  ? (classattribute.remove("dark"),this.textContent="off"):
+        (classattribute.add("dark"),this.textContent="on")
+
+     })
+
+</script>

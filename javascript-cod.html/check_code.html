@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">Add names</button>
+
+
+
+
+    <script type="text/javascript">
+    
+        let ul = document.createElement("ul");
+
+        let index= 0;
+        document.querySelector("button").addEventListener("click",function(){
+            let name=["sachin","dhone","kl","nkr"]
+            let li = document.createElement("li");
+            if(index<name.length){
+               li.textContent= name[index];
+                ul.appendChild(li);
+                index++;
+            }else{      
+                alert("no more names");
+            }
+
+        })
+
+        document.body.appendChild(ul);
+
+    </script>
+</body>
+</html>

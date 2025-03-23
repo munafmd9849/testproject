@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        function changeTheme(){
+            let form = document.getElementById("form")
+            let theme =document.getElementById("ThemeCheckBox");
+            if(theme.checked){
+                form.className="border border-1 rounded-2 w-25 p-3 mt-4 bg-black text-white";
+                document.querySelector("button").className="btn btn-light text-black w-100 mt-4"
+            }
+            else{
+                form.className="border border-1 rounded-2 w-25 p-3 mt-4 bg-body-tertiary";
+                document.querySelector("button").className="btn btn-dark w-100 mt-4"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <form action="" class="border border-1 rounded-2 w-25 p-3 mt-4 bg-body-tertiary" id="form">
+            <div class="form-switch" onchange="changeTheme()">        
+                <input type="checkbox" name="" id="ThemeCheckBox" class="form-check-input">
+             Dark Theme
+            </div>
+            <div class="h2">User Login</div>
+            <dl>
+                <dt><label for="EorM">User Name</label></dt>
+                <dd class="mb-3"><input type="text" name="txtEmail" class="form-control" ></dd>
+                <dt><label for="EorM">Password</label></dt>
+                <dd><input type="password" name="txtEmail" class="form-control" ></dd>
+                <button class="btn btn-dark w-100 mt-4">Login</button>
+        
+            </dl>
+            
+            </div>
+        </form>
+    </div>
+</body>
+</html>

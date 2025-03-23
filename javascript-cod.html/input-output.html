@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Sets the title of the document, which appears in the browser tab -->
+
+    <script type="text/javascript">
+        <!-- Embeds JavaScript code within the HTML document -->
+
+        function load() {
+            // Defines a function named 'load' that will execute when the page loads
+
+            result = prompt("enter the name");
+            // Displays a prompt dialog asking the user to "enter the name" and stores the input in the variable 'result'
+
+            console.log(result);
+            // Logs the user's input to the browser console for debugging purposes
+
+            msg = document.getElementById("msg");
+            // Retrieves the HTML element with the ID 'msg' (the <p> element) and assigns it to the variable 'msg'
+
+            if (result == null) {
+                // Checks if the user pressed "Cancel" in the prompt dialog
+                msg.outerHTML = "<h2> not entered and press cancel</h2>";
+                // Replaces the <p> element with an <h2> element containing the text "not entered and press cancel"
+            } else if (result == '') {
+                // Checks if the user pressed "OK" without entering any text
+                msg.outerHTML = "<h2> not entered and press ok</h2>";
+                // Replaces the <p> element with an <h2> element containing the text "not entered and press ok"
+            } else {
+                // Executes if the user entered some text and pressed "OK"
+                msg.outerHTML = "<h2> entered and press ok</h2>";
+                // Replaces the <p> element with an <h2> element containing the text "entered and press ok"
+            }
+        }
+    </script>
+</head>
+
+<body onload="load()">
+    <!-- Executes the 'load' function when the page finishes loading -->
+    <p id="msg"></p>
+    <!-- Defines a paragraph element with the ID 'msg', which will be manipulated by the script -->
+</body>
+
+</html>

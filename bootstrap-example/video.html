@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function videoplay(){
+            const video=document.getElementById("video")
+            console.log("video");
+            video.play();
+
+        }
+        function videopause(){
+            const video=document.getElementById("video")
+            console.log("video");
+            video.pause();
+        }
+        function audioplay(){
+            const audio=document.getElementById("audio")
+            console.log("audio");
+            audio.play();
+        }
+        function audiopause(){
+            const audio=document.getElementById("audio")
+            console.log("audio");
+            audio.pause();
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+    
+    <video  width="300" height="400" id="video" >
+        <source src="../public/videos/snuhith.mp4" type="video/mp4">
+    </video><br> 
+    <button onclick="videoplay()">play</button>
+    <button onclick="videopause()">pause</button>
+</div>
+
+<div>
+
+    <audio src="../public/audio/recording 1.m4a" id="audio" controls >
+        
+    </audio>
+    <button onclick="audioplay()" >paly</button>
+    <button onclick="audiopause()">pause</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon</title>
+    <link rel="shortcut icon" href="public/images/amazonicon.png" type="image/x-icon">
+    <style type="text/css">
+        body {
+            background-color: rgb(29, 139, 95);
+        }
+
+        .row {
+
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+
+        }
+
+        img {
+            padding-top: 20px;
+        }
+
+        .matter {
+            font-size: 13px;
+            line-height: 20px;
+            margin-top: -5px;
+            margin-bottom: -15px;
+
+        }
+
+        img {
+            height: 100px;
+        }
+
+        .cardheadding {
+            font-size: 20px;
+        }
+
+        .cardfooter {
+            font-size: 14px;
+            padding-top: 30px;
+        }
+
+        .card {
+            margin: 10px;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: arial;
+            background-color: white;
+            box-shadow: 5px 5px 0.5px ;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            margin-top: 50px;
+        }
+
+        .cardfooter {
+            color: rgb(12, 87, 119);
+        }
+
+        .image {
+
+            background-image: url(public/images/image.png);
+            height: 50vh;
+            width: 98vw;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -4px;
+        }
+
+        .abc {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .bi-amazon {
+            font-size: 30px;
+
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            color: white;
+            margin-top: -10px;
+            background-color: rgb(8, 50, 34);
+            padding: 10px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .all{
+            background-color: lightpink;
+        }
+        .for{
+            background-color: white;
+            color: black;
+        }
+        .bi-search{
+            background-color:rgb(69, 12, 56);
+        }
+        .av{
+           margin-left: 80px;
+           margin-top: 10px;
+          
+         
+
+        }
+
+        .for{
+            padding-right: 400px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+
+        }
+        .all,.bi-search{
+            padding:10px;
+            border-radius: 5px;
+        }
+        button{
+            background-color: rgb(8, 50, 34);
+            border: 1px solid rgb(8, 50, 34);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .sell{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            background-color: rgb(10, 100, 91);
+            padding: 10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            
+        
+        }
+        .sell button{
+
+            background-color: rgb(10, 100, 91);
+            border: 2px solid   rgb(10, 100, 91);
+            padding-left: 20px;
+        
+        }
+        
+
+
+        /*footer style*/
+
+
+        footer{
+            display: grid;
+            grid-template-columns:  2.4fr 2.4fr 2.4fr 2.4fr;
+            margin-top: 20px;
+            padding: 70px;
+            background-color: rgb(36, 60, 69)
+            
+        }
+        .sequence span{
+            display: block;
+            padding-top: 10px;
+        }
+        .capital{
+            font-weight: bold;
+            color: white;
+        }
+        .sequence{
+            margin-top: 10px;
+            color: white;
+        }
+        .body{
+            height: vh;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <button class="bi bi-amazon"></button>
+        <button>delhivery to <br><span class="bi bi-geo-alt"></span>India</button>
+        <div class="av"><span class="all">All <span class="bi bi-chevron-compact-down"></span></span><span class="for">search for amazon</span><span class="bi bi-search"></span></div>
+        <button>india</div>
+        <button>hello sign in <br>Account &Lists</button>
+        <button> retutns <br>& order</button>
+        <button><span class="bi bi-cart"><sub>cart</sub></span></button>
+    </header>
+    <div class="sell">
+        <button><span class="bi bi-list"></span>ALL</button>
+        <button>Todays deals</button>
+        <button>Coustmer service</button>
+        <button>Registry</button>
+        <button> Gift Card</button>
+        <button>Sell</button>
+        
+    </div>
+    <section class="image">
+
+    </section>
+    <div class="abc">
+        You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+        Click here to go to amazon.in
+    </div>
+    <section>
+        <!--card 1-->
+        <div class="card">
+            <div class="cardheadding"> <b>Revamp your home in <br>style</b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/1.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers,<br> bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/2.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Figurines, vases <br>& more</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/3.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Home storage <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/4.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Lighting solutions</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 2-->
+        <div class="card">
+            <div class="cardheadding"> <b>Explore more from Small Businesses </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/5.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Ethnic, dresses &<br>more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/6.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Décor</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/7.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers, bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/8.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Glassware & <br> drinkware</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 3-->
+        <div class="card">
+            <div class="cardheadding"> <b>Automotive essentials | <br> Up to 60% off<br></b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/9.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cleaning <br>accessories </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/10.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Tyre & rim care</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/11.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Helmets <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/12.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Vacuum cleaner</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more</div>
+        </div>
+        <!--card 4-->
+        <div class="card">
+            <div class="cardheadding"> <b>Appliances for your <br> home | Up to 55% off </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/13.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Air conditioners <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/14.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Refrigerators</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/15.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Microwaves <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/16.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Washing machines</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more </div>
+        </div>
+    </section>
+    <section>
+        <!--card 1-->
+        <div class="card">
+            <div class="cardheadding"> <b>Revamp your home in <br>style</b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/1.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers,<br> bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/2.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Figurines, vases <br>& more</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/3.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Home storage <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/4.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Lighting solutions</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 2-->
+        <div class="card">
+            <div class="cardheadding"> <b>Explore more from Small Businesses </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/5.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Ethnic, dresses &<br>more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/6.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Décor</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/7.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers, bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/8.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Glassware & <br> drinkware</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 3-->
+        <div class="card">
+            <div class="cardheadding"> <b>Automotive essentials | <br> Up to 60% off<br></b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/9.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cleaning <br>accessories </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/10.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Tyre & rim care</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/11.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Helmets <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/12.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Vacuum cleaner</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more</div>
+        </div>
+        <!--card 4-->
+        <div class="card">
+            <div class="cardheadding"> <b>Appliances for your <br> home | Up to 55% off </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/13.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Air conditioners <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/14.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Refrigerators</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/15.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Microwaves <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/16.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Washing machines</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more </div>
+        </div>
+    </section> 
+    <section>
+        <!--card 1-->
+        <div class="card">
+            <div class="cardheadding"> <b>Revamp your home in <br>style</b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/1.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers,<br> bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/2.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Figurines, vases <br>& more</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/3.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Home storage <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/4.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Lighting solutions</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 2-->
+        <div class="card">
+            <div class="cardheadding"> <b>Explore more from Small Businesses </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/5.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Ethnic, dresses &<br>more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/6.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Décor</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/7.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers, bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/8.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Glassware & <br> drinkware</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 3-->
+        <div class="card">
+            <div class="cardheadding"> <b>Automotive essentials | <br> Up to 60% off<br></b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/9.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cleaning <br>accessories </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/10.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Tyre & rim care</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/11.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Helmets <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/12.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Vacuum cleaner</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more</div>
+        </div>
+        <!--card 4-->
+        <div class="card">
+            <div class="cardheadding"> <b>Appliances for your <br> home | Up to 55% off </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/13.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Air conditioners <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/14.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Refrigerators</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/15.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Microwaves <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/16.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Washing machines</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more </div>
+        </div>
+    </section>
+    <section>
+        <!--card 1-->
+        <div class="card">
+            <div class="cardheadding"> <b>Revamp your home in <br>style</b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/1.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers,<br> bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/2.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Figurines, vases <br>& more</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/3.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Home storage <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/4.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Lighting solutions</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 2-->
+        <div class="card">
+            <div class="cardheadding"> <b>Explore more from Small Businesses </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/5.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Ethnic, dresses &<br>more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/6.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Décor</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/7.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cushion covers, bedsheets & more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/8.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Glassware & <br> drinkware</div>
+                </div>
+            </div>
+            <div class="cardfooter">Explore all</div>
+        </div>
+        <!--card 3-->
+        <div class="card">
+            <div class="cardheadding"> <b>Automotive essentials | <br> Up to 60% off<br></b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/9.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Cleaning <br>accessories </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/10.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Tyre & rim care</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/11.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Helmets <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/12.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Vacuum cleaner</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more</div>
+        </div>
+        <!--card 4-->
+        <div class="card">
+            <div class="cardheadding"> <b>Appliances for your <br> home | Up to 55% off </b></div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/13.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Air conditioners <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/14.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Refrigerators</div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div>
+                        <img src="public/images/15.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Microwaves <br><br></div>
+                </div>
+                <div>
+                    <div>
+                        <img src="public/images/16.png" alt="sorry" width="115px">
+                    </div>
+                    <div class="matter">Washing machines</div>
+                </div>
+            </div>
+            <div class="cardfooter">See more </div>
+        </div>
+    </section> 
+    <section class="body">
+
+    </section>
+    
+
+    <!--footer-->
+
+
+    <footer>
+        <div>
+            <div class="capital">Get To Know Us</div>
+            <div class="sequence">
+                <span>About Amazon</span>
+                <span>Careers</span>
+                <span>Press Releases</span>
+                <span>Amazon Science</span>
+            </div> 
+            
+
+        </div>
+        <div>
+            <div class="capital">Connect with Us</div>
+            <div class="sequence">
+                <span>Facebook</span>
+                <span>Twitter</span>
+                <span>Instagram</span>
+            </div>
+                  
+
+        </div>
+        <div>
+            <div class="capital" >Make Money With Us</div>
+            <div class="sequence">
+                <span>Sell on Amazon</span>
+                <span>Sell under Amazon Accelerator </span>
+                <span>Protect and Build Your Brand</span>
+                <span>Amazon Global Selling</span>
+                <span>Supply to Amazon</span>
+                <span>Become an Affiliate</span>
+                <span>Fulfilment by Amazon</span>
+                <span>Advertise Your Products</span>
+                <span>Amazon Pay on Merchants</span>
+            </div>
+            
+	
+            
+        </div>
+        <div>
+            <div class="capital">Let Us Help You</div>
+            <div class="sequence">
+                <span>Your Account</span>
+                <span>Returns Centre</span>
+                <span>Recalls and Product Safety Alerts</span>
+                <span>100% Purchase Protection</span>
+                <span>Amazon App Download</span>
+                <span>Help</span>
+            </div>
+            
+
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>

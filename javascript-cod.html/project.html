@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="range" id="range" min="10" max="100" onchange="change()">
+        <input type="color" id="color" onchange="change()">
+        <select name="" onchange="change()" id="font">
+            <option value="bold">bold</option>
+            <option value="italic">italic</option>
+        </select>
+        <select name="" id="align" onchange="change()">
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="center">center</option>
+        </select>
+    </div>
+    <p id="present">Lorem ipsum ?</p>
+    <script type="text/javascript">
+        function change(){
+       range= document.getElementById("range").value;
+       color= document.getElementById("color").value;
+       align= document.getElementById("align").value;
+       font= document.getElementById("font").value;
+       if(font=="bold"){
+           present.style.fontWeight=font;
+       }
+
+       else if(font=="italic"){
+           present.style.fontStyle=font;
+       }
+
+       present.style.fontSize=range+"px";
+       present.style.color=color;
+
+       if(align=="left"){
+        present.style.textAlign=align;
+    }else if(align=="right"){
+        present.style.textAlign=align;
+    }
+    else{
+        present.style.textAlign=align;
+    }
+    
+        }
+
+    </script>
+</body>
+</html>

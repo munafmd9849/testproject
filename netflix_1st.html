@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        .shade {
+            display: flex;  /*this is to adjust the body part in the center in a row*/
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+            align-items: center;   /* this is to keep the body part in the center verticlly*/
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: -8px;
+        }
+
+        .about {
+            font-size: 40px;  /*to increase font size*/
+        }
+
+        .about2 {
+            font-size: 40px;   /*to increase font size*/
+
+        }
+
+        .munaf {
+            margin: 30%;   
+
+            text-align: center;
+        }
+
+        .watch {
+            padding-top: 20px;   /* maintaining the distance b/w the two lines*/
+            font-size: 25px;
+        }
+
+        .subscription {
+            padding-top: 20px;    /* maintaining the distance b/w the two lines*/
+            font-size: 15px;
+            padding-bottom: 10px;
+
+        }
+
+        .side {
+            padding-right: 200px;
+            border: 1px solid white;
+            padding-top: 9px;               /* giving  space with in the row created*/
+            background-color: white; 
+            color: grey;
+            padding-bottom: 10px;
+        }
+
+        .irfan {
+            display: flex;         /* to arrange them in a row*/
+            flex-direction: row;
+
+        }
+
+        .start {
+            border: 1px solid red;
+            display: flex;                  /* to arrange them in a row*/
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 5px;
+            background-color: red;
+
+        }
+
+        .arrow {
+            padding-left: 15px;               /* giving space in b/w the rows*/
+            font-size: 20px;
+        }
+
+        .bi-chevron-right {
+            font-size: 20px;
+            padding-left: 5px;  /**giving space b/w the icon and text */
+        
+        }
+        .headding{
+            height: 100vh;
+            margin-left: 15px;
+            font-size: 15px;
+            color: red;
+        
+        }
+    </style>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body background="public/images/netflix.jpg">    <!-- giving the background image-->
+    <div class="shade">  
+        <div class="headding">NETFLIX</div>                      <!-- to make the bg-image less vissibe by giving the black bgcolor and by giving the rbga values-->
+        <main class="munaf">                    <!--to keep the text on the back ground image -->
+
+
+            <div class="about">
+                <span>Unlimited movies,TV</span>                        <!-- div-shade is fo blur the bg-->
+            </div>                                                      <!--main element is keep the text on the bg image-->
+            
+
+            <div class="about2">                                         <!-- im main ,further 5 div's-->
+                <span>shows,and more</span>
+            </div>                                                   
+
+
+            <div class="watch">
+                <span>Watch anywhere. Cancle anytime.</span>
+            </div>
+
+
+            <div class="subscription">
+                <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            </div>
+
+
+            <div class="irfan">
+
+                <div class="side">
+
+                    <span class="login">Email address</span>
+                </div>
+
+                <div class="start"> 
+
+                    <div>
+                        <span class="arrow">Get Started</span>
+                    </div>
+
+                    <div class=>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

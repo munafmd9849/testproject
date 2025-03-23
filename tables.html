@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        table{
+            width: 90%;
+            height: 70vh;
+            text-align: center;
+            border: 5px solid black;
+        }
+        caption{
+            font-size: 30px;
+            font-family: monospace;
+            text-transform: uppercase;
+            color: green;
+        }
+        td,tr{
+            border: 1px solid  ;
+            text-transform: uppercase;
+        }
+        tfoot{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <table >
+       <caption>cricketrs</caption>
+       <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>team logos</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>sachin</td>
+            <td>17</td>
+            <td rowspan="2">mi</td>
+            <td rowspan="2"><img src="public/images/mi.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>rohith</td>
+            <td>17</td>
+           
+            
+        </tr>
+        <tr>
+            <td>nkr</td>
+            <td>21</td>
+            <td rowspan="2">srh</td>
+            <td rowspan="2"><img src="public/images/srh.png" alt=""></td>
+        </tr>
+        <tr>
+            <td>abhishek sharma</td>
+            <td>21</td>
+            
+        </tr>
+        <tr>
+            <td>virat</td>
+            <td>30</td>
+            <td>rcb</td>
+            <td><img src="public/images/rcb.jpg" alt=""></td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">info about cricket players</td>
+            </tr>
+        </tfoot>
+       </tbody>
+    </table>
+</body>
+</html>

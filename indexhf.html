@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style type="text/css">
+        /*headder styling*/
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 15px;
+            color: rgb(20, 43, 30);
+            padding: 10px;
+            position: sticky;
+            top: 0px;
+            
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .menu {
+            padding-left: 20px;
+        }
+
+        .title~span {
+            margin: 100px;
+            font-weight: lighter;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 10px;
+            border: 1px;
+
+
+        }
+
+        .icons {
+            margin-top: 3px;
+            padding: 10px;
+
+
+
+        }
+
+        .icons span {
+            padding-left: 10px;
+
+
+        }
+
+        .items {
+            background-color: red;
+            height: 15px;
+            width: 15px;
+            border-radius: 15px;
+
+        }
+
+        article {
+            border: 1px solid aqua;
+            margin-top: 40px;
+            background-color: aqua;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: cursive;
+        }
+
+        .bi-lightning-charge-fill {
+            color: rgb(127, 130, 125);
+        }
+
+        .home span {
+            margin-left: 10px;
+        }
+
+        .home {
+            margin-top: 10px;
+        }
+
+        section {
+            height: 400vh;
+        }
+
+        /*footer styling*/
+        footer {
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            margin-top: 15px;
+            background-color: black;
+            color: white;
+        }
+
+        .title1~span {
+            color: gray;
+            display: block;
+            padding-top: 10px;
+        }
+
+        .heading {
+            font-family: arial;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+
+        .icons1 span {
+            padding-left: 10px;
+
+
+        }
+    </style>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- header-->
+
+    <header>
+
+        <div class="title">
+            Shopper
+        </div>
+        <nav class="home">
+            <span>Home</span>
+            <span>catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blogs</span>
+            <span>Docs</span>
+
+        </nav>
+
+
+        <nav class="icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart3"></span>
+            <span class="items"> 2</span>
+        </nav>
+    </header>
+    <article>
+        <marquee>
+            <span class="bi bi-lightning-charge-fill"></span> Welcome To Munaf Company <span
+                class="bi bi-lightning-charge-fill"></span>
+        </marquee>
+    </article>
+    <section></section>
+
+
+    <!--footer-->
+
+    <footer>
+        <div>
+            <div class="heading">
+                Shopper
+            </div>
+            <div class="icons1">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-github"></span>
+            </div>
+
+        </div>
+        <div>
+            <div class="title1">
+                support
+            </div>
+
+            <span>Contact us</span>
+            <span>FAQs</span>
+            <span>Size Guide</span>
+            <span>Shipping & Returns</span>
+
+        </div>
+        <div>
+            <div class="title1">
+                shop
+            </div>
+
+            <span>Men's Shopping</span>
+            <span>Women's Shoppin</span>
+            <span>Kid's Shopping</span>
+            <span> Discounts </span>
+
+        </div>
+        <div>
+            <div class="title1">
+                company
+
+            </div>
+
+            <span>Our Storys</span>
+            <span>Careers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie policy</span>
+
+        </div>
+        <div>
+            <div class="title1">
+                Contact
+            </div>
+
+
+            <span>1-202-555-0105</span>
+            <span>1-202-555-0106</span>
+            <span>help@shopper.com</span>
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        ul{
+            background-color: black;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+        <button class="btn btn-primary m-2"><span data-bs-target="#pop" data-bs-toggle="modal">booking</span></button>
+  
+
+    <div class="modal" id="pop" >
+        <div class="modal-dialog modal-fullscreen">
+           <div class="modal-content">
+               <div class="modal-header">
+                    <span>Quick Booking</span>
+                   <button class="btn btn-close" data-bs-dismiss="modal"></button>
+               </div>
+               <div class="modal-body">
+                   <ul class="d-flex list-unstyled" >
+                    <li>
+                        
+                        <select><option value="">select movie</option></select>
+                    
+                    </li>
+                    <li>
+                        
+                        <select><option value="">select cinema</option></select>
+                    
+                    </li>
+                    <li>
+                        
+                        <select><option value="">select Date</option></select>
+                    
+                    </li>
+                    <li>
+                        
+                        <select><option value="">Select Time</option></select>
+                    
+                    </li>
+                    <li>
+                        
+                        <select><option value="">Select seates</option></select>
+                    
+                    </li>
+                    <li>
+                        
+                        <button class="btn btn-danger">book</button>
+                    
+                    </li>
+                   </ul>
+               </div>
+           </div>
+   
+        </div>
+   
+    </div>
+ <script src="../node_modules/jquery/dist/jquery.js"></script>
+ <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

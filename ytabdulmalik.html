@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="public/icons/youtube.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 25px;
+            width: 98vw;
+            padding: 8px;
+            position: fixed;
+            top: 0px;
+            background-color: white;
+
+        }
+
+        img {
+            margin-bottom: -6px;
+        }
+
+        sup {
+            font-size: 10px;
+        }
+
+        .bi-list {
+            margin-left: 10px;
+            font-size: 30px;
+
+        }
+
+        .search {
+            border: 1px solid black;
+            padding: 8px;
+            border-radius: 35px;
+            margin-left: 100px;
+            font-size: 18px;
+            margin-top: -5px;
+        }
+
+
+        .bi-search {
+            margin-left: 375px;
+            font-size: 20px;
+            border-left: 1px solid black;
+            height: 30px;
+            padding: 9px;
+
+        }
+
+        .bi-mic-fill {
+            font-size: 20px;
+        }
+
+        .create {
+            margin-right: 50px;
+        }
+
+        .bi-plua {
+            font-size: 20px;
+        }
+
+        .create {
+            border-radius: 25px;
+            padding: 5px;
+        }
+
+        .bell {
+            margin-right: 35px;
+        }
+
+        .not {
+            background-color: red;
+            padding: 2px;
+            border-radius: 20px;
+        }
+
+        .m {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding-inline: 7px;
+            padding-top: 3px;
+            border-radius: 20px;
+            color: white;
+            margin-right: 15px;
+        }
+
+        aside {
+            left: 100px;
+            top: 1px;
+            position: sticky;
+        }
+
+        /* ul {
+            width: 35px;
+            position: fixed;
+            margin-top: 40px;
+        } */
+/* 
+        li {
+            margin-top: 25px;
+            list-style-type: none;
+            margin-left: -25px;
+            font-size: 25px;
+
+        } */
+
+        .list1 {
+            font-size: 15px;
+            margin-left: -30px;
+            margin-top: -5px;
+        }
+
+        .list1 {
+            font-size: 15px;
+            margin-left: -30px;
+            margin-top: -5px;
+        }
+
+        .list2 {
+            font-size: 15px;
+            margin-left: -30px;
+            margin-top: -5px;
+        }
+
+        .list3 {
+            font-size: 15px;
+            margin-left: -40px;
+            margin-top: -5px;
+        }
+
+        .list4 {
+            font-size: 15px;
+            margin-left: -30px;
+            margin-top: -5px;
+        }
+
+        .all span {
+            margin-right: 20px;
+            padding: 8px;
+
+        }
+
+        .all span:target {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .all {
+            margin-top: 30px;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .image {
+            /* float: right; */
+            margin-top: 50px;
+            border-radius: 20px;
+            margin-right: 40px;
+        }
+
+        .pic {
+            float: left;
+            border-radius: 150px;
+            margin-right: 30px;
+        }
+
+        .about {
+
+            margin-top: 30px;
+        }
+
+        .sub {
+            color: grey;
+        }
+
+        .malik {
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .pic~div {
+            margin-top: 9px;
+        }
+
+        .frames div {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 25px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+
+        iframe {
+            border-radius: 10px;
+            width: 370px;
+            height: 200px;
+        }
+
+        .frames2 iframe {
+            width: 220px;
+            height: 125px;
+        }
+
+        .frames2 div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        ul{
+            list-style-type: none;
+            margin-left: -25px;
+            margin-top: 50px;
+            position: fixed;
+        }
+        li img{
+            height: 60px;
+            margin-top: 20px;
+        }
+        .subb{
+            margin-left: -24px;
+        }
+        .frames3 iframe {
+            width: 220px;
+            height: 300px;
+        }
+
+        .frames3 div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        .tube{
+           margin-right: 10px;
+        }
+
+        /* .home:target{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        /* .home{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <span class="bi bi-list"></span>&nbsp;&nbsp;&nbsp;
+            <img class="tube" src="public/images/youtubeimage.png" alt="" height="30px" width="30px">YouTube <sup>IN</sup>
+        </div>
+        <div class="search">
+            abdul malik fareed
+            <span class="bi bi-search"></span>
+        </div>
+        <div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div>
+            <span class="create">
+                <span class="bi bi-plus">
+
+                </span>Create
+            </span>
+        </div>
+        <div class="bell">
+            <span class="bi bi-bell"><sup class="not">9</sup>
+            </span>
+        </div>
+        <div class="m">
+            M
+        </div>
+
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li><img src="public/images/ythomeb.png" alt=""></li>
+                <li><img src="public/images/ytshortsb.png" alt=""></li>
+                <li><img class="subb" src="public/images/ytsubb.png" alt=""></li>
+                <li><img src="public/images/ytyoyb.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div>
+            <div>
+
+                <img class="image" src="public/images/ytabdul.png" alt="" width="1100px">
+
+
+                <div class="about">
+                    <img class="pic" src="public/images/abdulimg.png" alt="" height="150px" width="150px">
+                    <h1>Abdul Malik Fareed</h1>
+                    <div><span class="mail">@AbdulMalikFareed</span><span class="sub"> • subscribers • 698 videos</span>
+                    </div>
+                    <div>
+                        <span class="sub">Subscribe Me☝️If You Are Interested in Travel, Food Adventure & Historical
+                            Places
+                            Videos</span>
+                    </div>
+                    <div><a href="">instagram.com/abmalikfareed </a>and 2 more links</div>
+                    <div><span class="bi bi-bell"> </span> Subscribe <span class="bi bi-chevron-down"></span></div>
+                </div>
+            </div>
+
+            <div class="all">
+
+                <a href="#hom"><span id="hom">home</span></a>
+                <a href="#video"><span id="video">videos</span></a>
+                <a href="#shorts"><span id="shorts">shorts</span></a>
+                <a href="#live"><span id="live">Live</span></a>
+                <a href="#unwanted"><span id="unwanted">Playlists</span></a>
+                <a href="#watched"><span id="watched">Community</span></a>
+            </div>
+
+
+            <div class="frames">
+                <h3>For You</h3>
+                <iframe src="https://www.youtube.com/embed/x3xaOtgtvu0" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/MipI-Ju2cTw" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/VCFCI1PMTJw" frameborder="0"></iframe>
+            </div>
+            <div class="frames2">
+                <h3>Popular Videos</h3>
+                <iframe src="https://www.youtube.com/embed/XzEmIgXLJNk" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/BLACuYmbLmk" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/xyD6dId6NrQ" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/b5ta4e9CrAA" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/b5ta4e9CrAA" frameborder="0"></iframe>
+            </div>
+            <div class="frames2">
+                <h3>Madinah Al Munawara</h3>
+                <iframe src="https://www.youtube.com/embed/iv_dhufIhTM" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/DrNJsQO-tks" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/HYifiWYCk6w" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/_nsg716klhE" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/ZxZ0WXJUKos" frameborder="0"></iframe>
+            </div>
+            <div class="frames3">
+                <h3>Shorts</h3>
+                <iframe src="https://www.youtube.com/embed/iv_dhufIhTM" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/DrNJsQO-tks" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/HYifiWYCk6w" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/_nsg716klhE" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/ZxZ0WXJUKos" frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

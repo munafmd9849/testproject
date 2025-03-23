@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+          .hed{
+            margin-left: 200px;
+            margin-top: 50px;
+          }
+          .hed span{
+            margin-left: 200px;
+          }
+          section{
+            display: flex;
+            flex-direction: row;
+          }
+          .card{
+            border: 1px solid black;
+            margin-left: 50px;
+            width: 400px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 2px 2px 0.1px black;
+          }
+          .card:target{
+            background-color: black;
+            color: white;
+          }
+          a{
+            text-decoration: none;
+          }
+          
+    </style>
+</head>
+<body>
+    <nav class="hed">
+        <span><a href="#html">HTML</a></span>
+        <span><a href="#css">CSS</a></span>
+        <span><a href="#js">JS</a></span>
+    </nav>
+    <section>
+        <nav class="card" id="html">
+            <h2>HTML</h2>
+            <p>
+                It is markup language
+            </p>
+        </nav>
+        <nav class="card" id="css">
+            <h2>CSS</h2>
+            <p>
+                It is styling language
+            </p>
+        </nav>
+        <nav class="card" id="js">
+            <h2>Java  Script</h2>
+            <p>
+                It is scripting language
+            </p>
+        </nav>
+    </section>
+</body>
+</html>
